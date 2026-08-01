@@ -7,11 +7,19 @@ Non personalized ads inside neovim, bringing the modern web experience to neovim
 ## Installation and Usage
 
 ```lua
-{ 'tamton-aquib/ads.nvim', config = true, dependencies = '3rd/image.nvim' }
+{
+    'tamton-aquib/ads.nvim',
+    opts = {
+        interval = 5 * 60 * 1000, -- ms between ads
+        width = 50,               -- ad float width in cells
+    },
+    dependencies = '3rd/image.nvim'
+}
+
 ```
 
 ## Features
-- Lightweight (~30 LOC)
+- Lightweight (~70 LOC)
 - Increases productivity
 - Random ads every 5 minutes
 - No tracking
@@ -19,5 +27,4 @@ Non personalized ads inside neovim, bringing the modern web experience to neovim
 > [!NOTE]
 > This plugin was made as a joke, it is not affiliated with any company or product.
 > Basically a challenge from a friend.
-
 
